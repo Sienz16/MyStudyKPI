@@ -1,0 +1,330 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer{
+    text-align: center;
+    font-size: 12px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*======================================
+    CSS to hide login and register
+=======================================*/
+.login-register-section {
+    display: none;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #ebe9e9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*============================================
+CSS for index header including the banner image
+============================================*/
+.header{
+    min-height: 750px;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../image/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav i{
+    font-size: 2rem;
+    color: #fff;
+}
+nav span{
+    overflow: hidden;
+    display: inline;
+    height: 20px;
+    margin-left: 10px;
+    color: #fff;
+}
+.nav-bars{
+    flex: 1;
+    text-align: right;
+}
+.nav-bars a{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-bars a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-bars a:hover::after{
+    width: 100%;
+}
+nav .fa{
+    display: none;
+}
+.desc-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.desc-box h1{
+    font-size: 62px;
+}
+.desc-box h2{
+    font-size: 18px;
+}
+.desc-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color : #fff;
+}
+.login-register-button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.login-register-button:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+/*========================================
+    CSS for Login Form
+  ======================================*/
+.row {
+    display: flex;
+	flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.col-left {	
+	text-align: center; 
+	flex: 20%;
+	padding: 15px;
+}
+.col-right {	
+	flex: 70%; 
+	padding: 15px;
+}
+.col-login {
+	flex: 20%;
+	padding: 15px;
+}
+.col-news {
+	flex: 70%;
+	padding: 15px; 
+}
+.container {
+	max-width: 300px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+.container button{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: none;
+    padding: 13px 115px;
+    font-size: 13px;
+    background: #c3b091;
+    border-radius: 20px;
+}
+.container input[type="text"],
+.container input[type="password"]{
+	text-align: left;
+	padding: 13px 10px;
+	width: 80%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.container input[type="checkbox"] {
+    padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.background-container {
+    background-color: #f2f2f2; 
+    width: 85%; 
+    height: 45px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login{
+    margin-top: 30px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+#newsDiv{
+    margin-top: 30px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/*===========================================
+  CSS for image (profile photo) in index.html
+=============================================*/		
+.image {
+	width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+	text-align: center;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.imgcontainer {
+	text-align: center;
+}
+.avatar {
+	border-radius: 50%;
+	overflow: hidden;
+	width: 200px; /* Adjust the width and height as needed */
+	height: 200px;
+	margin-top: 20px;
+	margin-bottom: 24px;
+}
+/*===========================================
+  CSS for register page
+===========================================*/
+#registerDiv {
+	display: none;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 50px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#registerDiv input{
+	display: block; 
+	text-align: left;
+	padding: 8px 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 80%;
+}
+#registerDiv button{
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    border: none;
+    padding: 15px;
+    font-size: 13px;
+    background: #c3b091;
+	width: 10%; 
+}
+#matricNo{
+	text-align: left;
+}
+
+/*========================================
+      CSS when pages are resized to 
+      smaller or for mobile screen
+  =======================================*/    
+@media(max-width: 700px){
+    .desc-box h1{
+        font-size: 20px;
+    }
+    nav img{
+        position: left;
+        width: 50px;
+    }
+    .nav-bars a{
+        display: block;
+    }
+    .nav-bars{
+        position: absolute;
+        background: #f44336;
+        height: 750px;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-bars a{
+        padding: 30px;
+    }
+    #registerDiv button{
+        font-size: 10px;
+        padding: 10px;
+        width: 23%;
+    }
+}
+
+@media (max-width: 786px) {
+	.header { 
+		height: 256px;
+    }
+			
+	.image {
+		display: block;
+		width: 30%; /* Set the image to 30% width */
+		margin: 0 auto; /* Center the image horizontally */
+	}
+
+    h1 {
+        font-size: 45px;
+    }
+			
+	.row {
+		/* Stack elements vertically on smaller screens */
+		flex-direction: column; 
+		width: 95%;
+    }
+	
+	[class*="col-"] {
+		/* Reset the flex property to prevent stretching */
+		flex: none; 
+		width: 100%;
+    }
+	
+	#challengeDiv table{
+		width: 100%;
+	}
+}
